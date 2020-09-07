@@ -2,5 +2,5 @@
 
 <%= render 'form', book: @book %>
 
-<%= link_to '詳細', @book %> |
-<%= link_to '一覧へ戻る', books_path %>
+<%= link_to t('views.show'), @book %> |
+<%= link_to t('views.back'), books_path %>

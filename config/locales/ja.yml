@@ -15,6 +15,12 @@ ja:
         memo: メモ
         author: 著者
         picture: 画像
+  views:
+    new: 新規作成
+    show: 詳細
+    edit: 編集
+    destroy: 削除
+    back: 一覧へ戻る
   date:
     abbr_day_names:
     - 日
