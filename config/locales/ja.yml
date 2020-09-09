@@ -21,6 +21,7 @@ ja:
     edit: 編集
     destroy: 削除
     back: 一覧へ戻る
+    Are you sure?: 本当に削除しますか？
   date:
     abbr_day_names:
     - 日
@@ -219,3 +220,7 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+  notice:
+    create: 本を登録しました
+    update: 更新しました
+    delete: 削除しました

@@ -22,7 +22,7 @@
         <td><%= book.picture %></td>
         <td><%= link_to t('views.show'), book %></td>
         <td><%= link_to t('views.edit'), edit_book_path(book) %></td>
-        <td><%= link_to t('views.destroy'), book, method: :delete, data: { confirm: "「#{book.title}」を削除しますか？" } %></td>
+        <td><%= link_to t('views.destroy'), book, method: :delete, data: { confirm: t('views.Are you sure?') } %></td>
       </tr>
     <% end %>
   </tbody>
