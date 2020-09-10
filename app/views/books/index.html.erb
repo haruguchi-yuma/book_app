@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Memo</th>
-      <th>Author</th>
-      <th>Picture</th>
+      <th><%= Book.human_attribute_name(:title) %></th>
+      <th><%= Book.human_attribute_name(:memo) %></th>
+      <th><%= Book.human_attribute_name(:author) %></th>
+      <th><%= Book.human_attribute_name(:picture) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= book.memo %></td>
         <td><%= book.author %></td>
         <td><%= book.picture %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('views.show'), book %></td>
+        <td><%= link_to t('views.edit'), edit_book_path(book) %></td>
+        <td><%= link_to t('views.destroy'), book, method: :delete, data: { confirm: t('views.confirm?') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to t('views.new'), new_book_path %>
