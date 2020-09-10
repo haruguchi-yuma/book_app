@@ -21,7 +21,7 @@ ja:
     edit: 編集
     destroy: 削除
     back: 一覧へ戻る
-    Are you sure?: 本当に削除しますか？
+    confirm: 本当に削除しますか？
   date:
     abbr_day_names:
     - 日
